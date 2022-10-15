@@ -6,10 +6,23 @@ print("Please insert Your CARD")
 # for card processing
 time.sleep(5)
 
-password = 1234
 
+def set_password():
+    temp = int(input("Enter Your New Pin : "))
+    temp2 = int(input("Confirm Your new Pin : "))
+    if (temp == temp2):
+        global password
+        password = temp2
+        print("Your Pin is Successfully created")
+    else:
+        print("Pin do not matched.")
+
+
+set_password()
+
+print("-----Welcome to our bank-----")
 # taking atm pin from user
-pin = int(input("enter your atm pin "))
+pin = int(input("Enter your ATM pin : "))
 
 # user account balance
 balance = 5000
@@ -25,6 +38,7 @@ if pin == password:
 			1 == balance
 			2 == withdraw balance
 			3 == deposit balance
+            4 == Set Password
 			4 == exit
 			"""
               )
