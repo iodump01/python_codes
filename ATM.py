@@ -1,4 +1,4 @@
-#issue - add set password function to ATM.
+# issue - add set password function to ATM.
 import time
 
 print("Please insert Your CARD")
@@ -39,18 +39,25 @@ if pin == password:
         if option == 1:
             print(f"Your current balance is {balance}")
 
+        elif (option == 2):
+            withdraw_amount = int(input("Please enter the Withdraw Amount"))
+            if (withdraw_amount < balance):
+                balance -= withdraw_amount
+                print(f"{withdraw_amount} is debited from your account")
+                print(f"Your updated balance is {balance}")
+            else:
+                print("Insufficient Balance.")
 
-
-        if option == 3:
-            deposit_amount = int(input("please enter deposit_amount"))
+        elif option == 3:
+            deposit_amount = int(input("Please enter Deposit Amount"))
 
             balance = balance + deposit_amount
 
             print(f"{deposit_amount} is credited to your account")
-
             print(f"your updated balance is {balance}")
 
         if option == 4:
+            print("Thanks for Banking with us.")
             break
 
 
