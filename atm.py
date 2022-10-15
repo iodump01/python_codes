@@ -38,6 +38,7 @@ if pin == password:
 			1 == balance
 			2 == withdraw balance
 			3 == deposit balance
+            4 == Set Password
 			4 == exit
 			"""
               )
@@ -69,9 +70,11 @@ if pin == password:
             print(f"{deposit_amount} is credited to your account")
             print(f"your updated balance is {balance}")
 
-        if option == 4:
+        elif option == 4:
             print("Thanks for Banking with us.")
             break
+        else:
+            print("Choose a valid option")
 
 
 else:
