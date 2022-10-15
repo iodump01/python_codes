@@ -1,7 +1,7 @@
 # To take input from the user
 num = int(input("Enter a number: "))
 
-factorial = 0
+factorial = 1
 
 # check if the number is negative, positive or zero
 if num < 0:
