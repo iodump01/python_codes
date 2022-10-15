@@ -17,3 +17,4 @@ class Account:
 account= Account()
 account.deposit()
 account.withdraw()
+print(account.self.balance)
