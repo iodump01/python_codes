@@ -38,7 +38,6 @@ if pin == password:
 			1 == balance
 			2 == withdraw balance
 			3 == deposit balance
-            4 == Set Password
 			4 == exit
 			"""
               )
